@@ -8,7 +8,7 @@ import os
 # Loeb tokeni pilveserveri seadetest
 TOKEN = os.environ.get('TELEGRAM_TOKEN')
 bot = telebot.TeleBot(TOKEN)
-
+bot.delete_webhook()
 # Loome väikese veebiserveri, et pilveteenus (Render) rahule jääks
 app = Flask(__name__)
 
